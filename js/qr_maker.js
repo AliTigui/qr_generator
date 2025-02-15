@@ -17,11 +17,13 @@ on("click", function () {
     makeCode();
 });
 function download () {		
-    
+    let img = document.querySelector("img");
     let src = document.querySelector("img").src;
     let link = document.createElement("a");
     link.href=src;
     link.download="qr.png";
+    link.appendChild(img);
+    document.querySelector("#qrcode").appendChild(link);
     link.click();
 
 }
