@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <title>USTHB</title>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <script src="./js/qrcode.min.js"></script>
+  <script src="./js/jquery.min.js"></script>
+</head>
+<body class="bg-dark">
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+
+      </header>
+<div class="container">
+    <div class="row align-items-center my-2">
+        <div class="col col-xl-2">
+          <label for="family_name" class="col-form-label fs-4 text-white">Family Name : </label>
+        </div>
+        <div class="col col-xl-4">
+          <input type="text" id="family_name" class="form-control" >
+        </div>
+    </div>
+    <div class="row align-items-center my-2">
+        
+        <div class="col col-xl-2">
+          <label for="name" class="col-form-label fs-4 text-white">Name : </label>
+        </div>
+        <div class="col col-xl-4">
+          <input type="text" id="name" class="form-control" >
+        </div>
+    </div>
+    <div class="row align-items-center my-2">
+        <div class="col col-xl-2">
+          <label for="id" class="col-form-label fs-4 text-white">ID : </label>
+        </div>
+        <div class="col col-xl-4">
+          <input type="text" id="id" class="form-control" >
+        </div>
+    </div>
+    <div class="row align-items-center my-2">
+        <div class="col col-xl-2">
+          <label for="class" class="col-form-label fs-4 text-white">Class : </label>
+        </div>
+        <div class="col col-xl-4">
+          <input type="text" id="class" class="form-control" >
+        </div>
+    </div>
+    <div class="row align-items-center my-2">
+        <div class="col col-xl-2">
+          <label for="group" class="col-form-label fs-4 text-white">Group: </label>
+        </div>
+        <div class="col col-xl-4">
+          <input type="text" id="group" class="form-control" >
+        </div>
+    </div>
+    <button id="generate" class="btn btn-primary px-3 fs-3">Generate</button>
+   
+    <div id="qrcode" class="my-3"></div>
+    <button id="download" class="btn btn-success px-3 fs-3">Download</button>
+    <script src="./js/qr_maker.js"></script>
+
+    </div>
+<footer class="py-3 my-4">
+    <span class="justify-content-center border-bottom pb-3 mb-3">
+    </span>
+    <p class="text-center text-body-secondary text-white">© 2025 </p>
+  </footer>
+
+</body>
+</html>
