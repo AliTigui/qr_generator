@@ -1,6 +1,6 @@
 var qrcode = new QRCode(document.getElementById("qrcode"), {
-    width : 350,
-    height : 350
+    width : 150,
+    height : 150
 });
 
 function makeCode () {		
