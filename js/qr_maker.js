@@ -36,6 +36,10 @@ function makeCode () {
 $("#generate").
 on("click", function () {
     makeCode();
+    
+});
+function download () {		
+    
     let img = document.querySelector("img");
     let src = document.querySelector("img").src;
     let link = document.createElement("a");
@@ -46,11 +50,10 @@ on("click", function () {
     btn=document.querySelector("#download");
     link.appendChild(btn);
     document.querySelector(".container").appendChild(link);
-});
-function download () {		
-    
-    
-URL.revokeObjectURL(url);
+    btn.onclick=function () {
+        
+}
+
 }
 
 $("#download").
