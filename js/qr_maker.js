@@ -1,6 +1,6 @@
 var qrcode = new QRCode(document.getElementById("qrcode"), {
-    width : 300,
-    height : 300
+    width : 270,
+    height : 270
 });
 function base64ToBlob(base64, contentType = "",
     sliceSize = 512) {
