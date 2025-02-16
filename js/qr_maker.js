@@ -36,8 +36,6 @@ function makeCode () {
 $("#generate").
 on("click", function () {
     makeCode();
-});
-function download () {		
     let img = document.querySelector("img");
     let src = document.querySelector("img").src;
     let link = document.createElement("a");
@@ -45,9 +43,13 @@ function download () {
     let url = URL.createObjectURL(blob);
     link.href=url;
     link.download="qr.png";
-    link.appendChild(img);
-    document.querySelector("#qrcode").appendChild(link);
-    link.click();
+    btn=document.querySelector("#download");
+    link.appendChild(btn);
+    document.querySelector(".container").appendChild(link);
+});
+function download () {		
+    
+    
 URL.revokeObjectURL(url);
 }
 
